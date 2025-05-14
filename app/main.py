@@ -10,7 +10,6 @@ def get_weather() -> None:
     if not api_key:
         print("Error: API_KEY environment variable is not set.")
         return
-
     city = "Paris"
     country = "France"
     url = f"https://api.weatherapi.com/v1/current.json?key={api_key}&q={city}" # noqa E231
